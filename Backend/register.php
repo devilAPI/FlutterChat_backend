@@ -3,10 +3,7 @@
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
+include 'database.php'; // Including the database connection
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
